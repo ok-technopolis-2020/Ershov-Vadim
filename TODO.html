@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TODO/TECHNOPOLIS</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css_TODO.css"> -->
+</head>
+<body>
+<div class="main_todos">
+	<h1 class="name">todos</h1>
+	<div class="main_element">
+		<nav class="add_new_todo">
+			<button class="select-all" aria-label="Add new todo">Add</button>
+			<input type="text" name="new_todo" placeholder="What needs to be done?">
+		</nav>
+		<ul class="my_todos">
+			<li>
+				<input type="checkbox" name="a" aria-labal="Set as done">
+				HTML 
+				<button class="delete-todo" aria-labal="delete this todo">Del</button>
+			</li>
+			<li>
+				<input type="checkbox" name="a" aria-labal="Set as done">
+				CSS 
+				<button class="delete-todo" aria-labal="delete this todo">Del</button>
+			</li>
+			<li>
+				<input type="checkbox" name="a" aria-labal="Set as done">
+				JS 
+				<button class="delete-todo" aria-labal="delete this todo">Del</button>
+			</li>
+			<li>
+				<input type="checkbox" name="a" aria-labal="Set as done">
+				JS tools 
+				<button class="delete-todo" aria-labal="delete this todo">Del</button>
+			</li>
+		</ul>
+		<footer>
+			<div class="number_items">
+				3 items left
+			</div>
+			<nav class="tabs">
+				<input type="radio" id="all" name="tabs" aria-label="Switch to all todos">
+				<label>All</label>
+				<input type="radio" id="active" name="tabs" aria-label="Switch to active todos">
+				<label>Active</label>
+				<input type="radio" id="completed" name="tabs" aria-label="Switch to completed todos">
+				<label>Completed</label>
+			</nav>
+			<div class="number_completed">
+				<button>Clear completed</button>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
