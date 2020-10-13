@@ -15,22 +15,22 @@
 		</nav>
 		<ul class="my_todos">
 			<li>
-				<input type="checkbox" name="a" aria-labal="Set as done">
+				<input type="checkbox" class="todo_element" aria-labal="Set as done">
 				HTML 
 				<button class="delete-todo" aria-labal="delete this todo">Del</button>
 			</li>
 			<li>
-				<input type="checkbox" name="a" aria-labal="Set as done">
+				<input type="checkbox" class="todo_element" aria-labal="Set as done">
 				CSS 
 				<button class="delete-todo" aria-labal="delete this todo">Del</button>
 			</li>
 			<li>
-				<input type="checkbox" name="a" aria-labal="Set as done">
+				<input type="checkbox" class="todo_element" aria-labal="Set as done">
 				JS 
 				<button class="delete-todo" aria-labal="delete this todo">Del</button>
 			</li>
 			<li>
-				<input type="checkbox" name="a" aria-labal="Set as done">
+				<input type="checkbox" class="todo_element" aria-labal="Set as done">
 				JS tools 
 				<button class="delete-todo" aria-labal="delete this todo">Del</button>
 			</li>
@@ -40,12 +40,18 @@
 				3 items left
 			</div>
 			<nav class="tabs">
-				<input type="radio" id="all" name="tabs" aria-label="Switch to all todos">
-				<label>All</label>
-				<input type="radio" id="active" name="tabs" aria-label="Switch to active todos">
-				<label>Active</label>
-				<input type="radio" id="completed" name="tabs" aria-label="Switch to completed todos">
-				<label>Completed</label>
+				<div>
+					<input type="radio" id="all" name="tabs" aria-label="Switch to all todos">
+					<label>All</label>
+				</div>
+				<div>
+					<input type="radio" id="active" name="tabs" aria-label="Switch to active todos">
+					<label>Active</label>
+				</div>
+				<div>
+					<input type="radio" id="completed" name="tabs" aria-label="Switch to completed todos">
+					<label>Completed</label>
+				</div>
 			</nav>
 			<div class="number_completed">
 				<button>Clear completed</button>
