@@ -7,37 +7,41 @@
 </head>
 <body>
 <div class="main_todos">
-	<h1 class="name">todos</h1>
-	<div class="main_element">
+	<header>
+		<h1 class="name">todos</h1>
+	</header>
+	<main class="main_element">
 		<nav class="add_new_todo">
 			<button class="select-all" aria-label="Add new todo">Add</button>
 			<input type="text" name="new_todo" placeholder="What needs to be done?">
 		</nav>
-		<ul class="my_todos">
-			<li>
-				<input type="checkbox" class="todo_element" aria-labal="Set as done">
-				HTML 
-				<button class="delete-todo" aria-labal="delete this todo">Del</button>
-			</li>
-			<li>
-				<input type="checkbox" class="todo_element" aria-labal="Set as done">
-				CSS 
-				<button class="delete-todo" aria-labal="delete this todo">Del</button>
-			</li>
-			<li>
-				<input type="checkbox" class="todo_element" aria-labal="Set as done">
-				JS 
-				<button class="delete-todo" aria-labal="delete this todo">Del</button>
-			</li>
-			<li>
-				<input type="checkbox" class="todo_element" aria-labal="Set as done">
-				JS tools 
-				<button class="delete-todo" aria-labal="delete this todo">Del</button>
-			</li>
-		</ul>
+		<section class="my_todos">
+			<ul>
+				<li>
+					<input type="checkbox" class="todo_element" aria-labal="Set as done">
+					<span class="todo_element_text">HTML</span>
+					<button class="delete-todo" aria-labal="delete this todo">Del</button>
+				</li>
+				<li>
+					<input type="checkbox" class="todo_element" aria-labal="Set as done">
+					<span class="todo_element_text">CSS</span>
+					<button class="delete-todo" aria-labal="delete this todo">Del</button>
+				</li>
+				<li>
+					<input type="checkbox" class="todo_element" aria-labal="Set as done">
+					<span class="todo_element_text">JS</span>
+					<button class="delete-todo" aria-labal="delete this todo">Del</button>
+				</li>
+				<li>
+					<input type="checkbox" class="todo_element" aria-labal="Set as done">
+					<span class="todo_element_text">JS tools</span> 
+					<button class="delete-todo" aria-labal="delete this todo">Del</button>
+				</li>
+			</ul>
+		</section>
 		<footer>
 			<div class="number_items">
-				3 items left
+				<span>3 items left</span>
 			</div>
 			<nav class="tabs">
 				<input type="radio" id="all" name="tabs" aria-label="Switch to all todos">
@@ -51,7 +55,7 @@
 				<button>Clear completed</button>
 			</div>
 		</footer>
-	</div>
+	</main>
 </div>
 </body>
 </html>
