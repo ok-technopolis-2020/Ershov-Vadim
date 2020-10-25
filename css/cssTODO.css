@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(fonts/Roboto-Thin.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(fonts/Roboto-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: none;
+    background: #F2F2F2;
+}
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__header h1 {
+    font-family: "Roboto-Thin", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 100px;
+    line-height: 21px;
+    color: #cccccc;
+
+    letter-spacing: -2.5px;
+}
+
+.todo__main {
+    display: flex;
+    flex-direction: column;
+
+    width: 562px;
+    min-height: 402px;
+    background: white;
+}
+
+.main__add-todo {
+    display: flex;
+    flex-direction: row;
+    height: 66px;
+
+    box-shadow: inset 0 -1px 0 #E6E6E6;
+}
+.select-all__button {
+    text-indent: -9999px;
+    width: 66px;
+    height: 66px;
+    border: 0;
+    outline: none;
+
+    background: url("../icons/select-all.png") no-repeat center center;
+}
+
+.select-all__button:hover {
+    background-color: #F2F2F2;
+}
+
+.add-todo__create-new-todo {
+    width: 100%;
+}
+
+.create-new-todo__input {
+    font-family: "Roboto-Thin", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+
+    border: 0;
+    padding: 0;
+    outline: none;
+
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 -1px 0 #E6E6E6;
+
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 -1px 0 #E6E6E6;
+}
+
+.item__view {
+    font-family: "Roboto-Light", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 62px;
+    color: #666666;
+    letter-spacing: -0.6px;
+
+    width: 100%;
+
+}
+
+.item__todo-element-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.item__todo-element-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.item__todo-element-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E6E6E6;
+    border-radius: 1em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px 40px;
+    background-color: white;
+}
+
+.item__todo-element-checkbox:checked+label::before {
+    border-color: #5DC2AF;
+    background: url("../icons/completed.png") no-repeat center center;
+}
+
+.item__todo-element-checkbox:checked~.item__todo-element-text {
+    color: #cccccc;
+    text-decoration-line: line-through;
+}
+
+.item__delete {
+    visibility: hidden;
+
+    text-indent: -9999px;
+    width: 62px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: url("../icons/close.png") no-repeat center center;
+}
+
+.list__item:hover {
+    background-color: #FAFAFA;
+    box-shadow: inset 0 -1px 0 #E6E6E6;
+}
+
+.list__item:hover .item__delete {
+    visibility: visible;
+}
+
+.item__todo-element-text {
+    width: 100%;
+    padding-left: 11px;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;word-break: break-word;
+}
+
+.main__footer {
+    font-family: "Roboto-Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.35px;
+    color: #888888;
+
+    background-color: white;
+    min-width: 562px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+}
+
+.footer__items-left {
+    padding-left: 9px;
+}
+
+
+.tabs__input {
+    display: none;
+}
+
+.tabs__input+.tabs__text {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 9px;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.tabs__input:checked+.tabs__text {
+    box-shadow: 0 0 1px 1px #E6E6E6;
+
+}
+
+.footer__completed {
+    padding-right: 9px;
+}
+
+.completed-button {
+    font-family: "Roboto-Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.35px;
+    color: #888888;
+    outline: none;
+
+    background-color: white;
+    border: 0;
+
+}
+
+.completed-button:hover {
+    background-color: #FAFAFA;
+}
