@@ -13,11 +13,11 @@
     <main class="todo__main main">
         <nav class="main__add-todo add-todo">
             <div class="add-todo__select-all select-all">
-                <button class="select-all__button" tabindex="1" aria-label="Select_all_todos">Select all</button>
+                <button class="select-all__button" aria-label="Select_all_todos">Select all</button>
             </div>
             <div class="add-todo__create-new-todo create-new-todo">
                 <label>
-                    <input class="create-new-todo__input" tabindex="2" type="text" name="new_todo"
+                    <input class="create-new-todo__input" type="text" name="new_todo"
                            placeholder="What needs to be done?">
                 </label>
             </div>
@@ -26,42 +26,42 @@
             <ul class="my-todos__list list">
                 <li class="list__item item">
                     <div class="item__view">
-                        <input id="completed1" tabindex="3" class="item__todo-element-checkbox" type="checkbox"
+                        <input id="completed1" class="item__todo-element-checkbox" type="checkbox"
                                aria-label="Set as done">
                         <label for="completed1" class="item__todo-element-text">HTML</label>
                     </div>
                     <div class="item__delete">
-                        <button class="item__delete-button" tabindex="4" aria-label="delete this todo">Del</button>
+                        <button class="item__delete-button" aria-label="delete this todo">Del</button>
                     </div>
                 </li>
                 <li class="list__item item">
                     <div class="item__view">
-                        <input id="completed2" tabindex="5" class="item__todo-element-checkbox" type="checkbox"
+                        <input id="completed2" class="item__todo-element-checkbox" checked="checked" type="checkbox"
                                aria-label="Set as done">
                         <label for="completed2"  class="item__todo-element-text">CSS</label>
                     </div>
                     <div class="item__delete">
-                        <button class="item__delete-button" tabindex="6" aria-label="delete this todo">Del</button>
+                        <button class="item__delete-button" aria-label="delete this todo">Del</button>
                     </div>
                 </li>
                 <li class="list__item item">
                     <div class="item__view">
-                        <input id="completed3" tabindex="7" class="item__todo-element-checkbox" type="checkbox"
+                        <input id="completed3" class="item__todo-element-checkbox" type="checkbox"
                                aria-label="Set as done">
                         <label for="completed3" class="item__todo-element-text">JS</label>
                     </div>
                     <div class="item__delete">
-                        <button class="item__delete-button" tabindex="8" aria-label="delete this todo">Del</button>
+                        <button class="item__delete-button" aria-label="delete this todo">Del</button>
                     </div>
                 </li>
                 <li class="list__item item">
                     <div class="item__view">
-                        <input id="completed4" tabindex="9" class="item__todo-element-checkbox" type="checkbox"
+                        <input id="completed4" class="item__todo-element-checkbox" type="checkbox"
                                aria-label="Set as done">
                         <label for="completed4" class="item__todo-element-text">JS tools</label>
                     </div>
                     <div class="item__delete">
-                        <button class="item__delete-button" tabindex="10" aria-label="delete this todo">Del</button>
+                        <button class="item__delete-button" aria-label="delete this todo">Del</button>
                     </div>
                 </li>
 
@@ -72,16 +72,16 @@
 				<div class="footer__items-left-text">3 items left</div>
 			</div>
 			<nav class="footer__tabs tabs">
-				<input class="tabs__input" tabindex="11" type="radio" id="all" name="tabs" aria-label="Switch to all todos"
+				<input class="tabs__input" type="radio" id="all" name="tabs" aria-label="Switch to all todos"
 					   checked="checked">
 				<label class="tabs__text" for="all">All</label>
-				<input class="tabs__input" tabindex="12" type="radio" id="active" name="tabs" aria-label="Switch to active todos">
+				<input class="tabs__input" type="radio" id="active" name="tabs" aria-label="Switch to active todos">
 				<label class="tabs__text"  for="active">Active</label>
-				<input class="tabs__input" tabindex="13" type="radio" id="completed" name="tabs" aria-label="Switch to completed todos">
+				<input class="tabs__input" type="radio" id="completed" name="tabs" aria-label="Switch to completed todos">
 				<label class="tabs__text" for="completed">Completed</label>
 			</nav>
 			<div class="footer__completed">
-				<button class="completed-button" tabindex="14">Clear completed</button>
+				<button class="completed-button" >Clear completed</button>
 			</div>
 		</footer>
     </main>
