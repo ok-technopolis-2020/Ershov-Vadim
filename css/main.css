@@ -42,4 +42,30 @@ body {
   min-height: 402px;
   background: var(--main-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:before {
+     display: block;
+     position: absolute;
+     content: '';
+     width: 558px;
+     height: 5px;
+     left: 2px;
+     top: 100%;
+     z-index: -1;
+     background-color: var(--main-bg-color);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   }
+
+  &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 554px;
+      height: 9px;
+      left: 4px;
+      top: 100%;
+      z-index: -2;
+      background-color: var(--main-bg-color);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   }
 }

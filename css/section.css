@@ -13,6 +13,17 @@
   display: flex;
   align-items: center;
   border-bottom: inset 1px var(--boxshadow-color);
+
+  &:hover {
+     cursor: pointer;
+     background-color: var(--body-bg-color);
+     box-shadow: inset 0 -1px 0 var(--boxshadow-color);
+
+     & .item__delete-button {
+         cursor: pointer;
+         left: 0;
+       }
+   }
 }
 
 .item__view {
@@ -28,50 +39,46 @@
   width: 100%;
 }
 
-.item__todo-element-text:hover {
-  cursor: pointer;
-}
-
 .item__todo-element-checkbox {
   position: absolute;
   z-index: -1;
   left: -99999px;
-}
 
-.item__todo-element-checkbox + label {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
 
-.item__todo-element-checkbox + label::before {
-  content: '';
-  display: inline-block;
-  width: 1.4em;
-  height: 1.4em;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid var(--boxshadow-color);
-  border-radius: 1em;
-  margin-right: 0.5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1.4em 1.4em;
-  background-color: white;
-}
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1.4em;
+      height: 1.4em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid var(--boxshadow-color);
+      border-radius: 1em;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 1.4em 1.4em;
+      background-color: white;
+     }
+   }
 
-.item__todo-element-checkbox:checked + label::before {
-  border-color: var(--checkbox-completed);
-  background: url("../icons/completed.svg") no-repeat center center;
-}
+  &:checked + label:before {
+     border-color: var(--checkbox-completed);
+     background: url("../icons/completed.svg") no-repeat center center;
+   }
 
-.item__todo-element-checkbox:checked ~ label {
-  color: var(--font-name-color);
-  text-decoration-line: line-through;
-}
+  &:checked ~ label {
+      color: var(--font-name-color);
+      text-decoration-line: line-through;
+   }
 
-.item__todo-element-checkbox:focus + label:before {
-  border: 1px dotted black;
+  &:focus + label:before {
+      border: 1px dotted black;
+   }
 }
 
 .item__delete {
@@ -86,22 +93,11 @@
   height: 62px;
   border: 0;
   background: url("../icons/close.svg") no-repeat center center;
-}
 
-.item__delete-button:focus {
-  left: 0;
-  outline: 1px dotted black;
-}
-
-.list__item:hover {
-  cursor: pointer;
-  background-color: var(--body-bg-color);
-  box-shadow: inset 0 -1px 0 var(--boxshadow-color);
-}
-
-.list__item:hover .item__delete-button {
-  cursor: pointer;
-  left: 0;
+  &:focus {
+    left: 0;
+    outline: 1px dotted black;
+   }
 }
 
 .item__todo-element-text {
@@ -111,4 +107,8 @@
   -webkit-hyphens: auto;
   hyphens: auto;
   word-break: break-word;
+
+  &:hover {
+     cursor: pointer;
+   }
 }
