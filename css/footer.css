@@ -1,0 +1,70 @@
+.main__footer {
+  font-family: "Roboto-Light", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.35px;
+  color: var(--footer-font-color);
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--boxshadow-color);
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+.footer__items-left {
+  padding-left: 9px;
+}
+
+.tabs__input {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.tabs__input + .tabs__text {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 9px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.tabs__input:checked:focus + .tabs__text {
+  border: 1px dotted black;
+}
+
+.tabs__input:checked + .tabs__text {
+  border: 1px solid var(--boxshadow-color);
+}
+
+.footer__completed {
+  padding-right: 9px;
+}
+
+.completed-button {
+  font-family: "Roboto-Light", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.35px;
+  color: var(--footer-font-color);
+  background-color: white;
+  border: 0;
+}
+
+.completed-button:hover {
+  cursor: pointer;
+  background-color: var(--body-bg-color);
+}
+
+.completed-button:focus {
+  outline: 1px dotted black;
+}

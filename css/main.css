@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url(fonts/Roboto-Thin.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url(fonts/Roboto-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --body-bg-color: #fafafa;
+  --font-name-color: #ccc;
+  --main-bg-color: #fff;
+  --boxshadow-color: #e6e6e6;
+  --footer-font-color: #888;
+  --checkbox-completed: #5dc2af;
+  --item-view-text-color: #666;
+}
+
+body {
+  margin: 0;
+  background: var(--body-bg-color);
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 562px;
+  min-height: 402px;
+  background: var(--main-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

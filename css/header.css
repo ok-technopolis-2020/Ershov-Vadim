@@ -1,0 +1,9 @@
+.todo__header .name {
+  font-family: "Roboto-Thin", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 100px;
+  line-height: 21px;
+  color: var(--font-name-color);
+  letter-spacing: -2.5px;
+}

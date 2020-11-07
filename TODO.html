@@ -3,7 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>TODO/TECHNOPOLIS</title>
-    <link rel="stylesheet" type="text/css" href="./css/cssTODO.css">
+    <link rel="stylesheet" type="text/css" href="css/add-todo.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/wrapper.css">
 </head>
 <body>
 <div class="todo">
@@ -11,7 +16,7 @@
         <h1 class="name">TODOs</h1>
     </header>
     <main class="todo__main main">
-        <nav class="main__add-todo add-todo">
+        <form class="main__add-todo add-todo">
             <div class="add-todo__select-all select-all">
                 <button class="select-all__button" aria-label="Select_all_todos">Select all</button>
             </div>
@@ -21,7 +26,7 @@
                            placeholder="What needs to be done?">
                 </label>
             </div>
-        </nav>
+        </form>
         <section class="main__my-todos my-todos">
             <ul class="my-todos__list list">
                 <li class="list__item item">
