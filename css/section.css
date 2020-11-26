@@ -9,8 +9,12 @@
 
 .list__item {
   list-style-type: none;
+}
+
+.item__entry {
   min-height: 62px;
-  display: flex;
+  width: 100%;
+  display: inline-flex;
   align-items: center;
   border-bottom: inset 1px var(--boxshadow-color);
 
@@ -36,6 +40,7 @@
   letter-spacing: -0.6px;
   display: flex;
   align-items: center;
+  min-height: 62px;
   width: 100%;
 }
 
@@ -48,6 +53,7 @@
     display: inline-flex;
     align-items: center;
     user-select: none;
+    min-height: 62px;
 
     &:before {
       content: '';
